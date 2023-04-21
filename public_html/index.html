@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Dorang landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Dorang | Free Bootstrap 4.3.x template</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- Bootstrap + Dorang main styles -->
+	<link rel="stylesheet" href="assets/css/dorang.css">
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
+    
+    <!-- page navbar -->
+    <nav class="page-navbar" data-spy="affix" data-offset-top="10">
+        <ul class="nav-navbar container">
+<li class="nav-item"><a href="https://www.google.com/maps/place/Palais+Laraki/@33.8764303,-5.5370157,15z/data=!4m2!3m1!1s0x0:0xac6a1f0dd21f6189?sa=X&ved=2ahUKEwj81JyY8bj-AhWCTaQEHcswDncQ_BJ6BAhSEAg" class="nav-link" target="_blank"><img src="assets/imgs/placeholder.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page"></a></li>
+        </ul>
+    </nav><!-- end of page navbar -->
+
+    <div class="theme-selector">
+        <a href="javascript:void(0)" class="spinner">
+            <i class="ti-paint-bucket"></i>
+        </a>
+        <div class="body">
+            <a href="javascript:void(0)" class="light"></a>
+            <a href="javascript:void(0)" class="dark"></a>
+        </div>
+    </div>  
+
+    <!-- page header -->
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1 class="header-title">Bienvenue</h1>
+            <p class="header-subtitle">Nous avons l'honneur de vous inviter a notre marriage le 06/06/2023 au palais LARAKI à Meknés.</p>
+
+<div id="countdown-timer"></div>
+
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- modal -->
+    <div class="modalBox">
+        <div class="modalBox-body">
+            <form>
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+          </div>
+          <button type="submit" class="btn btn-theme-color">Submit</button>
+        </form>
+        </div>          
+    </div><!-- end of modal -->
+
+  
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Dorang js -->
+    <script src="assets/js/dorang.js"></script>
+
+</body>
+</html>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("June 30, 2023 23:59:59").getTime();
+
+// Update the countdown every 1 second
+var x = setInterval(function() {
+
+  // Get the current date and time
+  var now = new Date().getTime();
+
+  // Calculate the remaining time
+  var distance = countDownDate - now;
+
+  // Calculate the days, hours, minutes and seconds remaining
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the countdown in the element with id="countdown-timer"
+  document.getElementById("countdown-timer").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the countdown is finished, display a message
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown-timer").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
